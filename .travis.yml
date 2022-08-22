@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t zihan42/react-test -f ./clientDocerfile.dev ./client
+  - docker build -t zihan42/react-test -f ./client/Docerfile.dev ./client
 
 script:
   - docker run -e CI=true USERNAME/react-test npm test
